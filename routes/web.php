@@ -17,6 +17,18 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/user', function() {
+    return "<h1> I am user </h1>";
+});
+
+Route::get('/home', function() {
+    return "home"; 
+});
+
+Route::get('/login', function() {
+    return "login"; 
+});
+
 Route::get('/post/create', function () {
     $post=new \App\Models\Post;
     $post->title = 'Title..';
